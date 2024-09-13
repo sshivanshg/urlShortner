@@ -4,6 +4,7 @@ import {Button} from "./ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu';
 import { Avatar, AvatarImage } from '@radix-ui/react-avatar';
 import { AvatarFallback } from './ui/avatar';
+import {LinkIcon, LogOut} from "lucide-react";
 
 
 
@@ -31,12 +32,19 @@ const Header = () => {
         </Avatar>
         </DropdownMenuTrigger>
         <DropdownMenuContent>
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuLabel>Shivansh Gupta</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Billing</DropdownMenuItem>
-            <DropdownMenuItem>Team</DropdownMenuItem>
-            <DropdownMenuItem>Subscription</DropdownMenuItem>
+
+            <DropdownMenuItem>
+            <Link to="/dashboard" className="flex">
+            <LinkIcon className="mr-2 h-4 w-4" />
+            My Links
+            </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem className="text-red-400">
+            <LogOut className="mr- 2 h-4 w-4"/>
+            <span> Logout</span>
+            </DropdownMenuItem>
         </DropdownMenuContent>
         </DropdownMenu>
             )
