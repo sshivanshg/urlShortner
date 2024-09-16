@@ -1,4 +1,18 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
+// import {
+//   Card,
+//   CardContent,
+//   CardDescription,
+//   CardFooter,
+//   CardHeader,
+//   CardTitle,
+// } from "../components/ui/card";
+// import { Input } from '../components/ui/input';
+// import { Button } from '../components/ui/button';
+// import { BeatLoader } from 'react-spinners';
+// import Error from '../components/error';
+// import * as Yup from 'yup';
+
 import {
   Card,
   CardContent,
@@ -6,11 +20,12 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../components/ui/card";
-import { Input } from '../components/ui/input';
-import { Button } from '../components/ui/button';
+} from "./card";  // No need to move up a directory
+
+import { Input } from './input';  // Adjusted for the same folder
+import { Button } from './button';  // Adjusted for the same folder
 import { BeatLoader } from 'react-spinners';
-import Error from '../components/error';
+import Error from './error';  // Adjusted for the same folder
 import * as Yup from 'yup';
 
 
