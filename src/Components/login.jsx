@@ -6,12 +6,13 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
+} from "../components/ui/card";
+import { Input } from '../components/ui/input';
+import { Button } from '../components/ui/button';
 import { BeatLoader } from 'react-spinners';
-import Error from '@/components/error';
+import Error from '../components/error';
 import * as Yup from 'yup';
+
 
 const Login = () => {
   const [errors, setErrors] = useState({});

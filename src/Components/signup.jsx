@@ -6,10 +6,9 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
-  } from "@/components/ui/card";
-import { Input } from './ui/input';
-import { Button } from './ui/button';
-
+  } from "../components/ui/card";
+import { Input } from '../components/ui/input';
+import { Button } from '../components/ui/button';
 
 
 const Signup = () => {
