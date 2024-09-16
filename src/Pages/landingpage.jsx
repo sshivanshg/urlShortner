@@ -1,13 +1,14 @@
-import {Button} from "@/components/ui/button";
-import {Input} from "@/components/ui/input";
-import {useState} from "react";
-import {useNavigate} from "react-router-dom";
+import { Button } from "../Components/ui/button";
+import { Input } from "../Components/ui/input";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "../Components/ui/accordion";
+
 
 const LandingPage = () => {
   const [longUrl, setLongUrl] = useState("");
