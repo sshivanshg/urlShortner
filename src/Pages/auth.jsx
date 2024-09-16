@@ -1,9 +1,9 @@
 import { LogIn } from 'lucide-react';
-import Login from "@/components/login";
-import Signup from "@/components/signup";
 import React from 'react'
 import { useSearchParams } from 'react-router-dom';
-import {Tabs, TabsContent, TabsList, TabsTrigger} from "@/components/ui/tabs";
+import Login from "../Components/login";
+import Signup from "../Components/signup";
+import {Tabs, TabsContent, TabsList, TabsTrigger} from "../Components/ui/tabs";
 
 
 const Auth = () => {

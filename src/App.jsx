@@ -2,10 +2,8 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import AppLayout from './layouts/app-layouts';
-// import RequireAuth from "./components/require-auth";
-
 import RedirectLink from './Pages/Redirect-link';
-import Auth from '@/components/Auth';
+import Auth from './Pages/auth.jsx';
 import Dashboard from './Pages/dashboard';
 import LandingPage from './Pages/landingpage';
 import Link from './Pages/link';
