@@ -1,19 +1,36 @@
-/* eslint-disable no-undef */
-import {defineConfig} from "vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
-
-// https://vitejs.dev/config/
-export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
+module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+  ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
     },
+    ecmaVersion: 12,
+    sourceType: 'module',
   },
+  plugins: ['react'],
   rules: {
-    "react/prop-types": 0,
+    'react/prop-types': 'off', // This disables the prop-types rule
   },
-});
-
-
+  settings: {
+    react: {
+      version: 'detect',
+    },
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './src']
+        ],
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+      }
+    }
+  }
+};
