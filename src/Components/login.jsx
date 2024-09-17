@@ -20,7 +20,7 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "./card";  // No need to move up a directory
+} from "./ui/card";  // No need to move up a directory
 
 import { Input } from './input';  // Adjusted for the same folder
 import { Button } from './button';  // Adjusted for the same folder
