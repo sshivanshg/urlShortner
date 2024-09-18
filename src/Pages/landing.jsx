@@ -1,14 +1,13 @@
-import { Button } from "../Components/ui/button";
-import { Input } from "../Components/ui/input";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import {Button} from "@/components/ui/button";
+import {Input} from "@/components/ui/input";
+import {useState} from "react";
+import {useNavigate} from "react-router-dom";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "../Components/ui/accordion";
-
+} from "@/components/ui/accordion";
 
 const LandingPage = () => {
   const [longUrl, setLongUrl] = useState("");
@@ -40,8 +39,8 @@ const LandingPage = () => {
         </Button>
       </form>
       <img
-        src="/Banner.png" 
-        className=" my-11 md:px-5"
+        src="/banner1.jpg" // replace with 2 in small screens
+        className="w-full my-11 md:px-11"
       />
       <Accordion type="multiple" collapsible className="w-full md:px-11">
         <AccordionItem value="item-1">
